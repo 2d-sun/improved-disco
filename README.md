@@ -2,6 +2,11 @@
 
 Fork me and extend list of destination URLs
 
+!!! IMPORTANT !!!
+
+This scheduled workflow is disabled because scheduled workflows are disabled by default in forks. 
+You need to enable them manually.
+
 ---
 
 Let's try to use GHA to perform load testing on these resources:
